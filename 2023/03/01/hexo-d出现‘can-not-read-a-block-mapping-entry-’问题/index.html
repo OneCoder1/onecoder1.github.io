@@ -24,29 +24,14 @@
     <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            集合、数组、列表
+            hexo d出现‘can not read a block mapping entry...’问题
         </p>
         <hr>
     </div>
     <div class="post-content">
-        <h1 id="挑战五天提升Java水平（1-x2F-5）"><a href="#挑战五天提升Java水平（1-x2F-5）" class="headerlink" title="挑战五天提升Java水平（1&#x2F;5）"></a>挑战五天提升Java水平（1&#x2F;5）</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><blockquote>
-<p>定义：一般来说是由一个或多个元素所构成的整体.</p>
-<p>通俗来说集合就是将一组事务组合在一起。</p>
-</blockquote>
-<p>其特点如下：</p>
-<ul>
-<li>集合里的元素不一定类型相同</li>
-<li>集合里的元素没有顺序这一说法</li>
-</ul>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
-<p>是一种数据项构成的<strong>有序</strong>序列，按照一定的线性顺序排列而成的数据项的集合</p>
-<p>通常我们有数组和链表作为其常见的表现形式，特殊一点的有栈和队列，这些都是数据结构中常见的。</p>
-</blockquote>
-<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><blockquote>
-<p>数组是常见的列表的实现方式，他的<strong>存储方式是连续</strong>的，且具有<strong>索引</strong>，在编程语言中一般从0开始进行索引。</p>
-<p> 数组虽然是列表的实现方式但与列表仍然有一定的差别。在Java和C++语言中，数组存储的是具有相同数据类型的元素，而在Python中则不同，其可以存储更多类型，在Python中，数组叫做List。</p>
-</blockquote>
-<h4 id="数组的操作"><a href="#数组的操作" class="headerlink" title="数组的操作"></a>数组的操作</h4><h5 id="读取数组"><a href="#读取数组" class="headerlink" title="读取数组"></a>读取数组</h5><p>由于数组的存储方式是连续的，可以将其想象成在一大片方格中进行存储。首先计算机会为了数组申请一片内存，可以用一块方格进行表示，同时计算机会记下索引为0时的地址，这样在通过索引读取的时候就可以计算来判断该位置存储的元素。其时间复杂度为O（1）。</p>
+        <h3 id="hexo部署问题：can-not-read-a-block-mapping-entry"><a href="#hexo部署问题：can-not-read-a-block-mapping-entry" class="headerlink" title="hexo部署问题：can not read a block mapping entry."></a>hexo部署问题：can not read a block mapping entry.</h3><p>在第一次通过hexo d命令部署时出现了低级问题：</p>
+<p><img src="/">(<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/OneCoder1/image/master/PicGo/%E6%88%AA%E5%B1%8F2023-03-01%2016.28.09.png">https://raw.githubusercontent.com/OneCoder1/image/master/PicGo/%E6%88%AA%E5%B1%8F2023-03-01%2016.28.09.png</a>)</p>
+<p>报错也很明显，在tags区域的语法错误，应用“-”键和换行来设定tags，并且保证每个“：”后都有空格。</p>
 
     </div>
 
