@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        Hexo
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            Java笔记（1）
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h1 id="Java入门"><a href="#Java入门" class="headerlink" title="Java入门"></a>Java入门</h1><ul>
+<li>语法与C相似</li>
+<li>没有指针，内存管理</li>
+<li>可移植性，一次编写，到处运行</li>
+<li>面向对象</li>
+</ul>
+<h2 id="Java初生"><a href="#Java初生" class="headerlink" title="Java初生"></a>Java初生</h2><p>图形界面程序Applet</p>
+<p>Java 2 标准版（J2SE）：桌面端</p>
+<p>Java 2 移动版（J2ME）：移动端</p>
+<p>Java 2 企业版（J2EE）：服务器端</p>
+<h2 id="Java发展"><a href="#Java发展" class="headerlink" title="Java发展"></a>Java发展</h2><p>例如构建工具：Maven，Jekins</p>
+<p>应用服务器：Tomcat，Jetty等</p>
+<p>Web开发：Struts，Spring，Hibernate，MyBatis</p>
+<p>开发工具：Eclipse，Idea等</p>
+<p>Hadoop（大数据领域）</p>
+<p>Android（手机端）</p>
+<h2 id="Java的特性和优势"><a href="#Java的特性和优势" class="headerlink" title="Java的特性和优势"></a>Java的特性和优势</h2><ul>
+<li>简单性（没有头文件，指针这些，语法类似于C）</li>
+<li>面向对象</li>
+<li>可移植性（跨平台）</li>
+<li>高性能（即时编译）</li>
+<li>分布式（通过URL可以访问网络上的资源，可以通过网络调用方法）</li>
+<li>动态性（有反射机制）</li>
+<li>多线程（交互更好，比如同时上QQ和打游戏）</li>
+<li>安全性（为了满足分布式，需要更大的安全性；会进行内存检查，防止崩溃，还有异常机制）</li>
+<li>健壮性</li>
+</ul>
+<h2 id="Java三大版本"><a href="#Java三大版本" class="headerlink" title="Java三大版本"></a>Java三大版本</h2><p>Write Once，Run Anywhere（JVM跨平台）</p>
+<p>JavaSE：标准版（桌面程序，控制台开发…）</p>
+<p>JavaME：嵌入式开发（手机，小家电…）</p>
+<p>JavaEE：E企业级开发（web端，服务器开发）</p>
+<h2 id="JDK，JRE，JVM"><a href="#JDK，JRE，JVM" class="headerlink" title="JDK，JRE，JVM"></a>JDK，JRE，JVM</h2><p>JDK：Java Development Kit（Java开发者工具）</p>
+<p>JRE：Java Runtime Environment（Java运行环境）</p>
+<p>JVM：Java Virtual Machine（Java虚拟机）</p>
+<p><img src="https://javabeginnerstutorial.com/wp-content/uploads/2015/07/JDK_JRE_JVM-1.jpg" alt="JDK vs JRE vs JVM"></p>
+<h2 id="Java环境搭载"><a href="#Java环境搭载" class="headerlink" title="Java环境搭载"></a>Java环境搭载</h2><h3 id="JDK安装目录说明"><a href="#JDK安装目录说明" class="headerlink" title="JDK安装目录说明"></a>JDK安装目录说明</h3><p><img src="http://cdn.sunrui.life/%E6%88%AA%E5%B1%8F2023-03-02%2014.43.10.png" alt="mac环境下zulu jdk目录"></p>
+<p>bin目录下有很多可执行文件&#x2F;应用程序，例如java，javac</p>
+<p>include存放了很多头文件</p>
+<p>lib里存放了库文件</p>
+<h2 id="HelloWorld及简单的语法规则"><a href="#HelloWorld及简单的语法规则" class="headerlink" title="HelloWorld及简单的语法规则"></a>HelloWorld及简单的语法规则</h2><ol>
+<li>新建一个文件夹存放代码</li>
+<li>新建一个java文件<ul>
+<li>后缀名为.java，<strong>命名为Hello.java</strong>（与Java的类名相同）</li>
+<li>windows系统可能不显示后缀，可以显示打开</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span>&#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>执行javac Hello.java编译成成.class文件</p>
+<p><img src="http://cdn.sunrui.life/%E6%88%AA%E5%B1%8F2023-03-02%2015.10.34.png" alt="编译"></p>
+</li>
+</ol>
+<p><img src="http://cdn.sunrui.life/%E6%88%AA%E5%B1%8F2023-03-02%2015.08.41.png" alt="生成了.class文件"></p>
+<ol start="4">
+<li>执行java Hello命令成功在控制台输出</li>
+</ol>
+<p><img src="http://cdn.sunrui.life/%E6%88%AA%E5%B1%8F2023-03-02%2015.12.36.png" alt="成功在控制台输出"></p>
+<h3 id="可能遇到的情况"><a href="#可能遇到的情况" class="headerlink" title="可能遇到的情况"></a>可能遇到的情况</h3><ul>
+<li>每个单词的大小写不能出错，Java对大小写很敏感</li>
+<li>尽量使用英文</li>
+<li>类名和文件名必须保证一致</li>
+</ul>
+<h2 id="Java程序运行机制"><a href="#Java程序运行机制" class="headerlink" title="Java程序运行机制"></a>Java程序运行机制</h2><ul>
+<li>编译型（compile，用编译器“直接全文翻译“）</li>
+<li>解释型（用一下翻译一下）</li>
+</ul>
+<p>而Java具有二者的特点。二者一个即时翻译一个需要时间，前者执行速度更快，对操作系统要求较低（如C、C++），后者例如一些网页和服务型脚本可以用，其对速度要求不高。</p>
+<p>Java先对源文件进行预编译形成字节码文件，字节码文件放进虚拟类装载器即加载到JVM里，然后校验通过后用解释器提交给操作系统。由于硬件的提升，现在二者速度差距不大。</p>
+<p><img src="https://img-blog.csdnimg.cn/fc53b4ae12f54365b3e34913872532b2.png"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>
